@@ -1,0 +1,10 @@
+polars==2.1.0
+duckdb==2.0.1
+pyarrow==26.0.1
+scikit-learn==1.9.1
+lightgbm==4.0.7
+mlflow==3.18.0
+shap==0.51.0
+plotly==7.1.0
+jupyter==1.1.1
+kaggle==2.2.5
