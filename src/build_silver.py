@@ -37,8 +37,8 @@ def main() -> None:
     test_id = fix_identity_columns(test_id)
 
     # 3. join each pair
-    train = join_tables(train_tx, train_id)
-    test = join_tables(test_tx, test_id)
+    train = join_tables(train_tx, train_id).sort("TransactionDT")
+    test = join_tables(test_tx, test_id).sort("TransactionDT")
 
     # 4. validate
     validate(train, test)
